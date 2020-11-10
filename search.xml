@@ -18,4 +18,27 @@
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>mpv安装</title>
+    <url>/2020/11/10/mpv%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<h1 id="一、安装"><a href="#一、安装" class="headerlink" title="一、安装"></a>一、安装</h1><h2 id="1-方式一-brew-安装"><a href="#1-方式一-brew-安装" class="headerlink" title="1.方式一:brew 安装"></a>1.方式一:brew 安装</h2><p>brew install mpv</p>
+<h2 id="2-方式二：源码安装"><a href="#2-方式二：源码安装" class="headerlink" title="2.方式二：源码安装"></a>2.方式二：源码安装</h2><p>下载源码：<a href="https://github.com/mpv-player/mpv/">https://github.com/mpv-player/mpv/</a></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ ./bootstrap.py</span><br><span class="line">$ ./waf configure</span><br><span class="line">$ ./waf</span><br><span class="line">$ ./waf install</span><br></pre></td></tr></table></figure>
+
+<h1 id="3-生成app"><a href="#3-生成app" class="headerlink" title="3.生成app"></a>3.生成app</h1><p>网上说可以使用 brew linkapps mpv，但是新版本的brew已经将linksapps操作给删掉了。<br>直接执行 brew cask install mpv即可，安装之后发现mpv已经出现在了lauchpad里面并且可以打开使用了。</p>
+<h1 id="4-配置"><a href="#4-配置" class="headerlink" title="4.配置"></a>4.配置</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">// 切换到mpv文件夹</span><br><span class="line">$ /Users/yourname/.config/mpv</span><br><span class="line"></span><br><span class="line">// 创建配置文件</span><br><span class="line">$ touch mpv.conf</span><br></pre></td></tr></table></figure>
+
+<h2 id="mpv-conf"><a href="#mpv-conf" class="headerlink" title="mpv.conf"></a>mpv.conf</h2><figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="comment"># mpv.conf</span></span><br><span class="line"><span class="attr">hwdec</span>=<span class="string">auto</span></span><br><span class="line"><span class="meta">autofit-larger</span>=<span class="string">92%</span></span><br><span class="line"><span class="meta">video-sync</span>=<span class="string">display-resample</span></span><br><span class="line"><span class="meta">sub-codepage</span>=<span class="string">enca:zh:utf8</span></span><br><span class="line"><span class="meta">sub-auto</span>=<span class="string">fuzzy</span></span><br><span class="line"><span class="meta">sub-font-size</span>=<span class="string">40</span></span><br><span class="line"><span class="meta">sub-shadow-offset</span>=<span class="string">0</span></span><br><span class="line"><span class="meta">sub-color</span>=<span class="string">&quot;#ffffffff&quot;</span></span><br><span class="line"><span class="meta">sub-font</span>=<span class="string">&quot;STZhongsong&quot;</span></span><br><span class="line"><span class="meta">sub-codepage</span>=<span class="string">utf8:gb18030</span></span><br><span class="line"><span class="meta">screenshot-template</span>=<span class="string">mpv-screenshot-%f-%p</span></span><br><span class="line"><span class="meta">screenshot-format</span>=<span class="string">png</span></span><br><span class="line"><span class="meta">osd-font</span>=<span class="string">&quot;STZhongsong&quot;</span></span><br><span class="line"><span class="meta">osd-font-size</span>=<span class="string">36</span></span><br><span class="line"><span class="meta">--script</span>=<span class="string">/Users/jinyinjie/.config/mpv/autoload.lua</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="5-使用"><a href="#5-使用" class="headerlink" title="5.使用"></a>5.使用</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ mpv http://dlhls.cdn.zhanqi.tv/zqlive/43626_vQOn9.m3u8</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>杂项</category>
+      </categories>
+      <tags>
+        <tag>安装</tag>
+        <tag>MVP</tag>
+      </tags>
+  </entry>
 </search>
