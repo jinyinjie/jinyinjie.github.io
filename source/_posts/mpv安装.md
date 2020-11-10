@@ -3,8 +3,8 @@ title: mpv安装
 date: 2020-11-10 17:26:49
 categories: 杂项 
 tags: 
-    - 安装
-    - MVP
+    - "安装"
+    - "MVP"
 ---
 # 一、安装
 
