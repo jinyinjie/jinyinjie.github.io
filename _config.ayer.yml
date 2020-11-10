@@ -124,7 +124,7 @@ layout:
 github:
   # (关闭请设置为false)
   enable: false
-  url: https://github.com/Shen-Yu/hexo-theme-ayer
+  url: https://github.com/jinyinjie
 
 # 网易云音乐插件
 music:
@@ -180,7 +180,7 @@ gongan:
 friends_link:
   Ayer主题: #网站名称
     #网站地址
-    url: https://github.com/Shen-Yu/hexo-theme-ayer
+    url: https://github.com/jinyinjie
     #网站图片(可忽略不写)
     img: /images/ayer.png
   GitHub:
